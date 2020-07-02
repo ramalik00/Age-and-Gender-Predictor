@@ -8,5 +8,6 @@
            • --input <filename> 
            • --output <file_name_save> to save the output after detection on input file
            • If no input is provided then your default webcam will be used 
-    5. When using detect_image.py only use --input command to provide path for input image      
+    5. When using detect_image.py only use --input command to provide path for input image     
+    < img src="screenshots/n.jpg" >
     
