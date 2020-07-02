@@ -66,8 +66,8 @@ for i in range(0,detections.shape[2]):
 		text2 = str(gender)+": {:.2f}".format((gender_confidence*100))+"%"
 
 		cv2.rectangle(image,(X_start,Y_start),(X_end,Y_end),(0, 0, 255), 2)
-		cv2.putText(image,text1,(X_start,Y_start-10),cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
-		cv2.putText(image, text2,(X_start, Y_end+20),cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
+		cv2.putText(image,text1,(X_start,Y_start-10),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
+		cv2.putText(image, text2,(X_start, Y_end+20),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 0, 255), 2)
 
 
 cv2.imshow("Frame", image)
