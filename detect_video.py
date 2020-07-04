@@ -67,13 +67,13 @@ weightsPath=os.path.sep.join(["gender_detector","gender_net.caffemodel"])
 gender_detect=cv2.dnn.readNet(prototxtPath,weightsPath)
 print("GENDER DETECTOR LOADED")
 
-vs = cv2.VideoCapture(args["input"] if args["input"]!="" else 0 )
+cap = cv2.VideoCapture(args["input"] if args["input"]!="" else 0 )
 writer=None
 
 
 while True:
 	
-	access,frame = vs.read()
+	access,frame = cap.read()
 	if not access:
                 break
 	frame = imutils.resize(frame,width=960)
